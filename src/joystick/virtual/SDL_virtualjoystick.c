@@ -577,6 +577,7 @@ static bool VIRTUAL_JoystickOpen(SDL_Joystick *joystick, int device_index)
     joystick->hwdata = hwdata;
     joystick->naxes = hwdata->desc.naxes;
     joystick->nbuttons = hwdata->desc.nbuttons;
+    joystick->nballs = hwdata->desc.nballs;
     joystick->nhats = hwdata->desc.nhats;
     hwdata->joystick = joystick;
 
